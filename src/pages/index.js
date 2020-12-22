@@ -29,8 +29,8 @@ const IndexPage = () => {
   //   }
   // `);
 
-  const blogs = data.allStrapiBlogs.edges;
-  console.log(blogs)
+  // const blogs = data.allStrapiBlogs.edges;
+  // console.log(blogs)
 
   return (
   <Layout>
