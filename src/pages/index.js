@@ -38,7 +38,7 @@ const IndexPage = () => {
       <div className="contentWrapper">
         <section className="staticContainer innerSection">
           <div className="wrapper">
-            <h2>Nimble. Savvy. Seasoned.</h2>
+            <h2>Dibyagopal, Sau.</h2>
             <p className="subHead">Digital Avenues is a team of builders and creators. With 20 years of experience behind us, we provide custom software that is designed to transform your business.</p>
             <div className="quickDesc">
               <ul>
