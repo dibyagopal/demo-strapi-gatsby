@@ -6,31 +6,25 @@ import SEO from "../components/seo"
 
 const IndexPage = () => {
 
-  // const data = useStaticQuery(graphql`
-  //   query {
-  //     allStrapiBlogs(limit: 3) {
-  //       edges {
-  //         node {
-  //           id
-  //           name
-  //           slug
-  //           Description
-  //           categories {
-  //             id
-  //             name
-  //           }
-  //           image {
-  //             name
-  //             publicURL
-  //           }
-  //         }
-  //       }
-  //     }
-  //   }
-  // `);
+  const data = useStaticQuery(graphql`
+    query {
+      allStrapiProjects(limit: 3) {
+        edges {
+          node {
+            id
+            title
+            short_description
+            cover_image_small {
+              publicURL
+            }
+          }
+        }
+      }
+    }
+  `);
 
-  // const blogs = data.allStrapiBlogs.edges;
-  // console.log(blogs)
+  const blogs = data.allStrapiProjects.edges;
+  //console.log(blogs)
 
   return (
   <Layout>
@@ -72,23 +66,23 @@ const IndexPage = () => {
             <p className="subHead">Whether it’s a web-based app, mobile app, or an app for use across all mobile operating systems, we can build the solutions you need.</p>
             <div className="expertiseBlkWrap">
               <ul>
-                {/* {blogs.map((object) => {
+                {blogs.map((object) => {
                 return (
-                  <li>
+                  <li key={object.node.id}>
                     <div className="picWrap">
-                      {object.node.image != null &&
-                        <img src={object.node.image.publicURL} alt />
+                      {object.node.cover_image_small != null &&
+                        <img src={object.node.cover_image_small.publicURL} alt />
                       }
                       
                     </div>
                     <div className="expertiseDetail">
-                      <h3>{object.node.name}</h3>
-                      <p>{object.node.Description}</p>
+                      <h3>{object.node.title}</h3>
+                      <p>{object.node.short_description}</p>
                       <a href="#" className="seeDetail">See the work</a>
                     </div>
                   </li>
                 );
-                })} */}
+                })}
                 {/* <li>
                   <div className="picWrap"><img src="images/pic.jpg" alt /></div>
                   <div className="expertiseDetail">
