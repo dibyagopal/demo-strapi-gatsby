@@ -35,12 +35,12 @@ const IndexPage = () => {
       <div className="contentWrapper">
         <section className="staticContainer innerSection">
         <div className="wrapper">
-          <h2>Nimble. Savvy. Seasoned</h2>
+          <h2>Power of digitata avenues</h2>
           <p className="subHead">Digital Avenues is a team of builders and creators. With 20 years of experience behind us, we provide custom software that is designed to transform your business.</p>
           <div className="quickDesc">
             <ul>
               <li>
-                <div className="secCount">60<span>+</span></div>
+                <div className="secCount">80<span>+</span></div>
                 <div>Team<br /> Members</div>
               </li>
               <li>
