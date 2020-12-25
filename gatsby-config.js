@@ -28,10 +28,7 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-offline`,
-      options: {
-        precachePages: [`/`],
-      },
+      resolve: `gatsby-plugin-offline`
     },
     {
       resolve: `gatsby-source-strapi`,
