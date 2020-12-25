@@ -38,7 +38,7 @@ const Footer = () => (
             </div>
             <div className="footerRight">
                 <ul className="footerNav">
-                <li><a href="index.html">HOME</a></li>
+                <li><a href="#">HOME</a></li>
                 <li><a href="#">Our Work</a></li>
                 <li><a href="#">Our Approach</a></li>
                 <li><a href="#">About Us</a></li>

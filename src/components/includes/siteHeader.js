@@ -1,5 +1,4 @@
 import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import React, { useState, useEffect } from "react"
 
 const Header = () => {
@@ -28,7 +27,7 @@ const Header = () => {
             <span className="closeNav" />
             <nav>
                 <ul>
-                    <li className="active"><a href="index.html">HOME</a></li>
+                    <li className="active"><Link to="/">HOME</Link></li>
                     <li><a href="#">Our Work</a></li>
                     <li><a href="#">Our Approach</a></li>
                     <li><a href="#">About Us</a></li>

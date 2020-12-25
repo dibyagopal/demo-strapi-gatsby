@@ -96,7 +96,7 @@ const IndexPage = () => {
                           <p><strong>Core Technologies:</strong> Angular, Node.js, Firebase, NoSQL</p>
                         </div>
                       </div>
-                      <div className="featuredImg"><img src={CleversortFeatured} alt /></div>
+                      <div className="featuredImg"><img src={CleversortFeatured} alt="Image" /></div>
                     </div>
                     <div className="goDetail"><a className="readMore" href="#">Read Case Study</a></div>
                   </li>
@@ -119,7 +119,7 @@ const IndexPage = () => {
                   <li key={object.node.id}>
                     <div className="picWrap">
                       {object.node.cover_image_small != null &&
-                        <img src={object.node.cover_image_small.publicURL} alt />
+                        <img src={object.node.cover_image_small.publicURL} alt="Image" />
                       }
                       
                     </div>
@@ -180,7 +180,7 @@ const IndexPage = () => {
               </ul>
             </div>
             <div className="techDesc">
-              <div className="illustrationBlk"><img src={IllustrationMobile} alt /></div>
+              <div className="illustrationBlk"><img src={IllustrationMobile} alt="Image" /></div>
               <ul>
                 <li>iOS</li>
                 <li>Android</li>
