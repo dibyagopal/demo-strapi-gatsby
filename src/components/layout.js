@@ -12,9 +12,9 @@ import { Helmet } from "react-helmet";
 
 import Header from "./includes/siteHeader"
 import Footer from "./includes/siteFooter"
-import UpdateButtonWithHook from "./UpdateButtonWithHook"
+// import UpdateButtonWithHook from "./UpdateButtonWithHook"
 import "../../assets/css/custom.css"
-import "./layout.css"
+// import "./layout.css"
 
 
 const Layout = ({ children }) => {
@@ -36,7 +36,7 @@ const Layout = ({ children }) => {
       <div className="outerWrapper">
         <div className="mainContainer">
           <Header />
-          <UpdateButtonWithHook />
+          {/* <UpdateButtonWithHook /> */}
           {children}
         </div>
         <Footer />
