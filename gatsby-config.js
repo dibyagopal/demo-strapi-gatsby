@@ -18,7 +18,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
+        name: `Digital Avenues`,
         short_name: `DA`,
         start_url: `/`,
         background_color: `#663399`,
