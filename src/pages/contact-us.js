@@ -9,10 +9,10 @@ const SecondPage = () => (
     <SEO title="About Us" />
     <div className="contentWrapper">
       <section className="staticContainer innerSection">
-      <h1>About Us</h1>
-      <p>About Us page view</p>
+      <h1>Contact Us</h1>
+      <p>Contact Us page </p>
       <Link to="/">Go back to the homepage</Link>
-      <Link to="/contact-us">Go back to contact us</Link>
+      <Link to="/about-us">Go back to about us</Link>
       </section>
     </div>
   </Layout>
