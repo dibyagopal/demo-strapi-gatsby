@@ -10,7 +10,7 @@ const SecondPage = () => (
     <div className="contentWrapper">
       <section className="staticContainer innerSection">
       <h1>About Us</h1>
-      <p>About Us page</p>
+      <p>About Us page view</p>
       <Link to="/">Go back to the homepage</Link>
       </section>
     </div>
