@@ -1,5 +1,5 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -126,7 +126,7 @@ const IndexPage = () => {
                     <div className="expertiseDetail">
                       <h3>{object.node.title}</h3>
                       <p>{object.node.short_description}</p>
-                      <a href="#" className="seeDetail">See the work</a>
+                      <Link to={'/project/'+object.node.id.replace(/_/g, '-').toLowerCase()} className="seeDetail">See the work</Link>
                     </div>
                   </li>
                 );

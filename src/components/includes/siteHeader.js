@@ -27,7 +27,7 @@ const Header = () => {
 
     return (
         <header className={"mainHeader " + (pageScrolled ? 'pageScrolled' : '') + (mobileMenuOpen ? 'active' : '')}>
-            <h1 className="logo"><a href="#" /></h1>
+            <h1 className="logo"><Link to="/"></Link></h1>
             <span className="mobileNav" onClick={openMobileMenu} />
             <span className="closeNav"  onClick={openMobileMenu} />
             <nav>
