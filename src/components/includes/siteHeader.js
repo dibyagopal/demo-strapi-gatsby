@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react"
 const Header = () => {
 
     const [pageScrolled, setPageScrolled] = useState(false);
+    const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
     useEffect(() => {
         const onScroll = e => {
             if(e.target.documentElement.scrollTop>70){
@@ -18,13 +19,17 @@ const Header = () => {
         return () => window.removeEventListener("scroll", onScroll);
     }, [pageScrolled]);
 
-    console.log(pageScrolled)
+    function openMobileMenu() {
+        setMobileMenuOpen(!mobileMenuOpen);
+    }
+
+    //console.log(pageScrolled)
 
     return (
-        <header className={"mainHeader " + (pageScrolled ? 'pageScrolled' : '')}>
-            <h1 className="logo"><a href="index.html" /></h1>
-            <span className="mobileNav" />
-            <span className="closeNav" />
+        <header className={"mainHeader " + (pageScrolled ? 'pageScrolled' : '') + (mobileMenuOpen ? 'active' : '')}>
+            <h1 className="logo"><a href="#" /></h1>
+            <span className="mobileNav" onClick={openMobileMenu} />
+            <span className="closeNav"  onClick={openMobileMenu} />
             <nav>
                 <ul>
                     <li className="active"><Link to="/">HOME</Link></li>
