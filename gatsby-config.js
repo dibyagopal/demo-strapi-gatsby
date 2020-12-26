@@ -27,12 +27,7 @@ module.exports = {
         icon: `src/images/favicon.png`, // This path is relative to the root of the site.
       },
     },
-    {
-      resolve: `gatsby-plugin-offline`,
-      options: {
-        precachePages: [`/about-us/`],
-      },
-    },
+    'gatsby-plugin-offline',
     {
       resolve: `gatsby-source-strapi`,
       options: {
