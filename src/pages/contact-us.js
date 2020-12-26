@@ -11,7 +11,7 @@ const SecondPage = () => (
       <section className="staticContainer innerSection">
       <h1>Contact Us</h1>
       <p>Contact Us page </p>
-      <Link to="/">Go back to the homepage</Link>
+      <Link to="/">Go back to the homepage</Link><br></br><br></br>
       <Link to="/about-us">Go back to about us</Link>
       </section>
     </div>
