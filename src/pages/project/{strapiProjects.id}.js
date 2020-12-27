@@ -31,10 +31,12 @@ const SecondPage = ({data, pageContext}) => {
   //let data = getDataId(pageContext.id);
 
   let projectData = data.strapiProjects;
+  //alert(window.location.origin)
+  const metaImage = window.location.origin+'/'+projectData.cover_image_small.publicURL;
 
   return(
     <Layout>
-        <SEO title={projectData.title} />
+        <SEO title={projectData.title} image={metaImage} />
         <div className="contentWrapper">
           <section className="staticContainer innerSection">
           <h1>{projectData.title}</h1>
