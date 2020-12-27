@@ -5,7 +5,7 @@ import Layout from "../../components/layout"
 import SEO from "../../components/seo"
 
 
-const siteURL = window.location.origin;
+const siteURL = 'https://da-gatsby-strapi-demo.netlify.app';
 
 const SecondPage = ({data, pageContext}) => {
 
