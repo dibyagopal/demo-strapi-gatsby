@@ -5,7 +5,7 @@ import Layout from "../../components/layout"
 import SEO from "../../components/seo"
 
 
-
+const siteURL = window.location.origin;
 
 const SecondPage = ({data, pageContext}) => {
 
@@ -32,7 +32,7 @@ const SecondPage = ({data, pageContext}) => {
 
   let projectData = data.strapiProjects;
   //alert(window.location.origin)
-  const metaImage = window.location.origin+'/'+projectData.cover_image_small.publicURL;
+  const metaImage = siteURL+'/'+projectData.cover_image_small.publicURL;
 
   return(
     <Layout>
